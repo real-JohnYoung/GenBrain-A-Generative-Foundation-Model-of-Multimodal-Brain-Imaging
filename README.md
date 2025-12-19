@@ -9,8 +9,7 @@ This project provides the code and pretrained models for research and developmen
 
 ## Pretrained Weights
 
-You can download the pretrained weights here:  
-[Google Drive Link](https://drive.google.com/drive/folders/1ajTRlSGIfg9OXQtXX7TfBhVDKaMPrALM?usp=drive_link)
+You can download the pretrained weights here:  [Google Drive Link](https://drive.google.com/drive/folders/1ajTRlSGIfg9OXQtXX7TfBhVDKaMPrALM?usp=drive_link)
 
 ---
 
