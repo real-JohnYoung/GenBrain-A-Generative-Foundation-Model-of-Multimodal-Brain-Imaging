@@ -1,0 +1,46 @@
+{
+    "Description":"Data information of UKB Multimodal Imaging Data. e.g. mean, std, min, std",
+    
+    "Image Data":{ 
+               "0":{"modality": "dti_FA_2mm", "mean":2.168e-1, "std":1.699e-1, "min":0.0, "max":1.0},
+               "1":{"modality": "dti_L1_2mm", "mean":1.217e-3, "std":6.424e-4, "min":0.0, "max":4.0e-3},
+               "2":{"modality": "dti_L2_2mm", "mean":9.649e-4, "std":6.109e-4, "min":0.0, "max":3.6e-3}, 
+               "3":{"modality": "dti_L3_2mm", "mean":8.194e-4, "std":5.975e-4, "min":0.0,"max":3.3e-3},
+               "4":{"modality": "dti_MD_2mm", "mean":1.001e-3, "std":6.033e-4, "min":0.0, "max":3.6e-3},
+               "5":{"modality": "dti_MO_2mm", "mean":2.161e-1, "std":3.986e-1, "min":-1.0, "max":1.0},
+               "6":{"modality": "NODDI_ICVF_2mm","mean":4.207e-1, "std":2.045e-1,"min":0.0, "max":1.0},
+               "7":{"modality": "NODDI_ISOVF_2mm", "mean":2.070e-1, "std":2.792e-1, "min":0.0, "max":1.1} ,
+               "8":{"modality": "NODDI_OD_2mm", "mean":4.021e-1, "std":2.252e-1, "min":0.0, "max":1.0},
+               "9":{"modality": "QSM_2mm", "mean":-8.776e-2, "std":1.813e1, "min":-8.0e1, "max": 1.2e2},
+               "10":{"modality": "SWI_2mm", "mean":0.0, "std":1.0, "min":0.0, "max":5.0e2},
+               "11":{"modality": "T1_brain_nonlinear_2mm", "mean":0.0, "std":1.0, "min":0.0, "max": 2.0e3},
+               "12":{"modality": "T1_warp_Jac_2mm", "mean":9.846e-1, "std":2.665e-1, "min":0.0, "max":2.6},
+               "13":{"modality": "T2_FLAIR_brain_to_MNI", "mean":0.0, "std":1.0, "min":0.0, "max":1.0e3},
+               "14":{"modality": "T2star_2mm", "mean":4.465e1, "std":1.153e1,"min":0.0,"max":6.7e1},
+               "15":{"modality": "VBM_2mm", "mean":4.369e-1, "std":3.961e-1, "min":0.0, "max":2.0},
+               "16":{"modality": "zstat1s", "mean":1.278e-1, "std":2.247, "min":-1.0e1, "max":1.0e1},
+               "17":{"modality": "zstat2s", "mean":1.714e-1, "std":2.343, "min":-1.0e1, "max":1.0e1},
+               "18":{"modality": "zstat5s", "mean":6.611e-2, "std":1.563, "min":-6.0, "max":8.0},
+               "19":{"modality": "DU15_1", "mean":8.184e-2,  "std":1.816e-1,  "min":-1.0, "max":1.0},
+               "20":{"modality": "DU15_2", "mean":8.167e-2,  "std":1.834e-1,  "min":-1.0, "max":1.0},
+               "21":{"modality": "DU15_3", "mean":7.080e-2,  "std":1.693e-1,  "min":-1.0, "max":1.0},
+               "22":{"modality": "DU15_4", "mean":7.214e-2,  "std":1.659e-1,  "min":-1.0, "max":1.0},
+               "23":{"modality": "DU15_5", "mean":8.087e-2,  "std":1.699e-1,  "min":-1.0, "max":1.0},
+               "24":{"modality": "DU15_6", "mean":8.184e-2,  "std":1.818e-1, "min":-1.0, "max":1.0},
+               "25":{"modality": "DU15_7", "mean":8.670e-2,  "std":1.889e-1,  "min":-1.0, "max":1.0},
+               "26":{"modality": "DU15_8", "mean":8.022e-2,  "std":1.743e-1,  "min":-1.0, "max":1.0},
+               "27":{"modality": "DU15_9", "mean":8.684e-2,  "std":1.698e-1,  "min":-1.0, "max":1.0},
+               "28":{"modality": "DU15_10", "mean":8.195e-2, "std":1.737e-1, "min":-1.0, "max":1.0},
+               "29":{"modality": "DU15_11", "mean":8.830e-2, "std":1.802e-1, "min":-1.0, "max":1.0},
+               "30":{"modality": "DU15_12", "mean":9.034e-2, "std":1.890e-1, "min":-1.0, "max":1.0},
+               "31":{"modality": "DU15_13", "mean":8.033e-2, "std":1.792e-1, "min":-1.0, "max":1.0},
+               "32":{"modality": "DU15_14", "mean":9.119e-2, "std":1.764e-1, "min":-1.0, "max":1.0},
+               "33":{"modality": "DU15_15", "mean":7.450e-2, "std":1.659e-1, "min":-1.0, "max":1.0}
+               },
+               
+     "Condition Data" :{
+               "sex_num":2,
+               "age_info":{"mean":64.275,"std":7.756},
+               "modality_mum":34
+           }
+}
