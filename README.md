@@ -2,16 +2,30 @@
 
 ## Overview
 
-**GenBrain** is a generative foundation model designed for multimodal brain imaging.  
-This project provides the code and pretrained models for research and development in neuroimaging and AI-driven brain analysis.
+**GenBrain** is a generative foundation model designed for multimodal brain imaging. 
+
+GenBrain is pre-trained on large-scale neuroimaging data from the **UK Biobank** and evaluated on **81 heterogeneous datasets**, demonstrating strong generalization across imaging modalities and downstream tasks.
+
+This repository provides the core implementation of GenBrain, along with pretrained models for research and development in neuroimaging and AI-driven brain analysis.
 
 ---
+## Support downstream tasks
+### Image Level tasks
+1. **Image Enhancement**  
+   - Denoising and motion correction.
+
+2. **Cross-modality Synthesis**  
+   It can be used for :
+   - Structural Synthesis (e.g.T1w<->FLAIR)
+   - Functional Synthesis: rs-fMRI fc to task-based fMRI activations (e.g. 15 [seed-based](https://freesurfer.net/fswiki/CorticalParcellation_DU15NET) rs-fMRI fc to "shapes" task contrast maps in UKB)
+   - Structure-Function Synthesis: dMRI scalar maps to rs-fMRI fc (e.g.  )
 
 ## Pretrained Weights
 
-You can download the pretrained weights here:  [Google Drive Link](https://drive.google.com/drive/folders/1ajTRlSGIfg9OXQtXX7TfBhVDKaMPrALM?usp=drive_link)
+You can download the pre-trained weight here:  [Google Drive Link](https://drive.google.com/drive/folders/1ajTRlSGIfg9OXQtXX7TfBhVDKaMPrALM?usp=drive_link)
 
 ---
 
 ## Directory Structure
+
 
