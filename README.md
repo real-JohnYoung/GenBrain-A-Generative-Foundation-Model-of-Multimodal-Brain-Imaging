@@ -10,7 +10,8 @@ This repository provides the core implementation of GenBrain, along with pretrai
 
 ---
 ## Support downstream tasks
-### Image Level tasks
+
+
 1. **Image Enhancement**  
    - Denoising and motion correction.
 
@@ -18,7 +19,7 @@ This repository provides the core implementation of GenBrain, along with pretrai
    It can be used for :
    - Structural Synthesis (e.g.T1w<->FLAIR)
    - Functional Synthesis: rs-fMRI fc to task-based fMRI activations (e.g. 15 [seed-based](https://freesurfer.net/fswiki/CorticalParcellation_DU15NET) rs-fMRI fc to "shapes" task contrast maps in UKB)
-   - Structure-Function Synthesis: dMRI scalar maps to rs-fMRI fc (e.g.  )
+   - Structure-Function Synthesis: dMRI scalar maps to rs-fMRI fc (e.g. DTI and NODDI to  Language Network based fc)
 
 ## Pretrained Weights
 
