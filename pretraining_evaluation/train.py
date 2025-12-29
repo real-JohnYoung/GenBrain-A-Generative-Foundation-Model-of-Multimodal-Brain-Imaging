@@ -1,8 +1,6 @@
-# Copyright (c) Meta Platforms, Inc. and affiliates.
-# All rights reserved.
-
-# This source code is licensed under the license found in the
-# LICENSE file in the root directory of this source tree.
+# This source code is modified based on  DiT (Meta). Thanks for its contribution.
+# References:
+# DiT:https://github.com/facebookresearch/DiT
 
 """
 A minimal training script for DiT using PyTorch DDP.
@@ -25,6 +23,9 @@ import argparse
 import logging
 import os
 import json
+
+import sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from models import DiT_models
 from diffusion import create_diffusion
