@@ -13,7 +13,6 @@ import torch.distributed as dist
 from torch.nn.parallel import DistributedDataParallel as DDP
 from torch.utils.data import DataLoader
 from torch.utils.data.distributed import DistributedSampler
-from torchvision import transforms
 import numpy as np
 from collections import OrderedDict
 from copy import deepcopy
@@ -228,7 +227,7 @@ def main(args):
 if __name__ == "__main__":
     # Default args here will train DiT-XL/2 with the hyperparameters we used in our paper (except training iters).
     parser = argparse.ArgumentParser()
-    parser.add_argument("--data_path", type=str, default="UKB_multimodal_dataset")
+    parser.add_argument("--data_path", type=str, default="Path_to_UKB_Multimodal_Brain_Image_Dataset")
     parser.add_argument("--data_file", type=str, default="../labels/train_data.csv")
     parser.add_argument("--data_info", type=str,default="../labels/data_info.json")
     parser.add_argument("--label_file", type=str, default="../labels/train_data_label.csv")
