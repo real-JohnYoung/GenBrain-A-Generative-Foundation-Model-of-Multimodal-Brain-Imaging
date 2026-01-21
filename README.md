@@ -37,9 +37,18 @@ Model weights can be downloaded from Google Drive or obtained by contacting me.
   
 3. **Cross-site diagnosis**  
 4. **Improving BWAS realiability**  
+
+
+
+
 5. **Clinical Application**
+   - Finetune GenBrain on clinical-grade images with disease labels. Synthetic images are added to real images at varying ratios to train the predictive model, improving its diagnostic performance.
+   - Specifically, this approach enhances the prediction of acute stroke severity (ds004889) and chronic aphasia (ds004884).
+
 6. **Image Super-resolution**  
    - Finetune GenBrain for image super-resolution task (e.g 2mm T1w -> 1mm T1w, operated in MNI152 standard space).
+   - The pipeline first applies nearest-neighbor interpolation to upsample the low-resolution image to the target resolution, followed by GenBrain for super-resolution.
+
 
 ## Pretrained Weights
 
