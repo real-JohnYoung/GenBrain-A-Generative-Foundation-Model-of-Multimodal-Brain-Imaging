@@ -50,7 +50,7 @@ Model weights can be downloaded from Google Drive or obtained by contacting the 
 
 - **GenBrain Pre-training Instructions:**
 
-  1. **Data Preprocessing:** UKB multimodal brain image dataset are non-linearly registered to the MNI152 2mm standard space. Brain voxels are then extracted from the template and saved as `.npy` files. Note: *([FSL software](https://fsl.fmrib.ox.ac.uk/fsl/docs/index.html) is recommended for preprocessing)*
+  1. **Data Preprocessing:** UKB multimodal brain image dataset are non-linearly registered to the MNI152 2mm standard space. Brain voxels are then extracted according to nonzero indices in the template and saved as `.npy` files (stored as 1d array, N_voxel=228,453). Note: *([FSL software](https://fsl.fmrib.ox.ac.uk/fsl/docs/index.html) is recommended for preprocessing)*
 
   2. **Configure Pre-training Settings and Files:** Prepare model pre-training parameters, data file, and label file (including individual age, sex, and imaging modality), files are in `labels` directory. Phenotypic information and imaging modality details can be found in `data_info.json`. 
   
@@ -62,10 +62,23 @@ Model weights can be downloaded from Google Drive or obtained by contacting the 
      Pre-training code is in `pretraining_evaluation` directory.
 
 - **GenBrain Finetuning Instructions:**
-  
-    1. **Data preprocess**: Similar to pretraining
-    2. Load GenBrain's pre-training weight and finetuning.
 
+  1. **Data Preprocessing**
+     - Perform data preprocessing similar to the pre-training stage.
+     - Ensure input formats, normalization, and any filtering steps match the pre-training pipeline.
+
+  2. **Load Pre-trained Weights and Adapt Model Architecture**
+     - Load GenBrain's pre-trained weights.
+     - Modify the architecture according to the target task:
+       - **Image-level tasks**: e.g. adjust patchify layer.
+       - **Disease label finetune**: e.g add disease-label embedder.
+       - ...
+  3. **Running the Finetuning and Inference:**
+     ```bash
+     torchrun --nnodes=N_Node --nproc_per_node=N_GPU finetune.py # finetune
+     python evaluate.py # inference
+     ```
+  4. **Note:** Our downstream task code can be referenced for implementation details and examples.
 - **Reproduction instructions:** Follow the default hyper-parameter settings in the source code or according to our paper. 
 
 
