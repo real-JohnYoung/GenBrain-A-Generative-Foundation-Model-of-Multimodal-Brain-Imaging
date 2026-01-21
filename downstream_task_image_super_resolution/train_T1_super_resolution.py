@@ -51,7 +51,6 @@ def cleanup():
     """
     dist.destroy_process_group()
 
-
 def create_logger(logging_dir):
     """
     Create a logger that writes to a log file and stdout.
