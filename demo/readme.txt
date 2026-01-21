@@ -3,5 +3,5 @@ Additional demos for other downstream tasks can be run using the provided source
 If you require other checkpoints, they can be downloaded from Google Drive or obtained by contacting me.
 
 step 1: Download finetuned model weight and stored in ckpt directory. 
-step 2: Enter Demo directory and run inference. Note: corrupted images are registered in MNI152 stdspace, and brain voxels are extracted according to template' nonzero indices.
+step 2: Enter Demo directory and run inference. "python inference.py". Note: corrupted images are registered in MNI152 stdspace, and brain voxels are extracted according to template' nonzero indices.
 step 3: Visualize.ipynb can be used for visualization.
