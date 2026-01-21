@@ -87,12 +87,10 @@ Model weights can be downloaded from Google Drive or obtained by contacting the 
 
 You can download the pre-trained weight here:  [Google Drive Link](https://drive.google.com/drive/folders/1ajTRlSGIfg9OXQtXX7TfBhVDKaMPrALM?usp=drive_link)
 
----
 
 ## License
 
 This project is licensed under the MIT License.
-
 
 ## Contact
 If you encounter any issues while using this code, please feel free to contact me. I will be happy to help.
