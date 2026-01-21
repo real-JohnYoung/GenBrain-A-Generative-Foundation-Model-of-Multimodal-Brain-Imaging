@@ -8,7 +8,22 @@ GenBrain is pre-trained on large-scale neuroimaging data from the **UK Biobank**
 
 This repository provides the core implementation of GenBrain, along with pretrained models for research and development in neuroimaging and AI-driven brain analysis.
 
----
+
+## System Requirements
+
+## Installation guide
+
+
+## Deomo
+A demo for image enhancement is provided. 
+Additional demos for other downstream tasks can be run using the provided source code. 
+Model weights can be downloaded from Google Drive or obtained by contacting me.
+
+
+## Instructions for use
+
+
+
 ## Support downstream tasks
 
 1. **Image Enhancement**  
@@ -32,3 +47,8 @@ You can download the pre-trained weight here:  [Google Drive Link](https://drive
 ---
 
 ## Directory Structure
+
+
+## Contact
+If you encounter any issues while using this code, please feel free to contact me. I will be happy to help.
+
