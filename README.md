@@ -1,4 +1,5 @@
 # GenBrain - A Generative Foundation Model of Multimodal Brain Imaging
+The version corresponding to the submitted manuscript is tagged as v1.0. This repository is currently being organized and further updates will be added over time.
 
 ## Overview
 
@@ -38,7 +39,7 @@ Model weights can be downloaded from Google Drive or obtained by contacting the 
 
 - **GenBrain Pre-training Instructions:**
 
-  1. **Data Preprocessing:** UKB multimodal brain image dataset are non-linearly registered to the MNI152 2mm standard space. Brain voxels are then extracted from the template and saved as `.npy` files. Note: *(FSL software is recommended for preprocessing)*
+  1. **Data Preprocessing:** UKB multimodal brain image dataset are non-linearly registered to the MNI152 2mm standard space. Brain voxels are then extracted from the template and saved as `.npy` files. Note: *([FSL software](https://fsl.fmrib.ox.ac.uk/fsl/docs/index.html) is recommended for preprocessing)*
 
   
   2. **Configure Pre-training Settings and Files:** Prepare model pre-training parameters, data file, and label file (including individual age, sex, and imaging modality). Phenotypic information and imaging modality details can be found in `data_info.json`.
@@ -46,7 +47,7 @@ Model weights can be downloaded from Google Drive or obtained by contacting the 
   3. **Running the Training:** Multi-GPU training requires support for Distributed Data Parallel (Recommend Nvidia A100 GPUs):
      ```bash
      torchrun --nnodes=N_Node --nproc_per_node=N_GPU train.py
-     torchrun --nnodes=1 --nproc_per_node=6 train.py          # Our: 1 node with 6 Nvidia A100 GPUs
+     torchrun --nnodes=1 --nproc_per_node=6 train.py    # Our: 1 node with 6 Nvidia A100 GPUs
      ```
 
 - **GenBrain Finetuning Instructions:**
