@@ -1,0 +1,66 @@
+{
+    "Tian_subcortex_1": {
+        "mean": 0.137,
+        "std": 0.217
+    },
+    "Tian_subcortex_2": {
+        "mean": 0.146,
+        "std": 0.216
+    },
+    "Tian_subcortex_3": {
+        "mean": 0.16,
+        "std": 0.223
+    },
+    "Tian_subcortex_4": {
+        "mean": 0.171,
+        "std": 0.228
+    },
+    "Tian_subcortex_5": {
+        "mean": 0.143,
+        "std": 0.212
+    },
+    "Tian_subcortex_6": {
+        "mean": 0.147,
+        "std": 0.217
+    },
+    "Tian_subcortex_7": {
+        "mean": 0.169,
+        "std": 0.226
+    },
+    "Tian_subcortex_8": {
+        "mean": 0.145,
+        "std": 0.217
+    },
+    "Tian_subcortex_9": {
+        "mean": 0.143,
+        "std": 0.219
+    },
+    "Tian_subcortex_10": {
+        "mean": 0.144,
+        "std": 0.217
+    },
+    "Tian_subcortex_11": {
+        "mean": 0.163,
+        "std": 0.223
+    },
+    "Tian_subcortex_12": {
+        "mean": 0.161,
+        "std": 0.225
+    },
+    "Tian_subcortex_13": {
+        "mean": 0.135,
+        "std": 0.208
+    },
+    "Tian_subcortex_14": {
+        "mean": 0.136,
+        "std": 0.212
+    },
+    "Tian_subcortex_15": {
+        "mean": 0.17,
+        "std": 0.223
+    },
+    "Tian_subcortex_16": {
+        "mean": 0.122,
+        "std": 0.211
+    }
+}
