@@ -280,7 +280,7 @@ if __name__ == "__main__":
     parser.add_argument("--num-sampling-steps", type=int, default=50)
     parser.add_argument("--seed", type=int, default=0)
     parser.add_argument("--image-size", type=int, default=228453)
-    parser.add_argument("--ckpt", type=str, default="ckpt/image_quality_enhancement_step_0050000.pt")# 
+    parser.add_argument("--ckpt", type=str, default="./ckpt/image_quality_enhancement_step_0050000.pt")# 
     parser.add_argument("--ckpt_step", type=int, default=50000)
     parser.add_argument("--save_dir", type=str, default="./results")
     parser.add_argument("--data_info", type=str, default="./labels/data_info.json")
