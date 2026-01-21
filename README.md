@@ -92,6 +92,8 @@ You can download the pre-trained weight here:  [Google Drive Link](https://drive
 
 This project is licensed under the MIT License.
 
+## Citation
+For usage of the code and associated manuscript, please cite [GenBrain: A Generative Foundation Model of Multimodal Brain Imaging](https://www.medrxiv.org/content/10.64898/2025.12.19.25342614v1).
+
 ## Contact
 If you encounter any issues while using this code, please feel free to contact me. I will be happy to help.
-
