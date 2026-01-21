@@ -9,15 +9,26 @@ GenBrain is pre-trained on large-scale neuroimaging data from the **UK Biobank**
 
 This repository provides the core implementation of GenBrain, along with pretrained models for research and development in neuroimaging and AI-driven brain analysis.
 
-
 ## System Requirements
- - Operating system: Linux 
- - GPU: Nvidia A100 80G
+
+- OS: Ubuntu 22.04.5 LTS (kernel 3.10.0-1160)
+- Python: 3.10.12
+- Libraries: PyTorch 2.4.1+cu118, nibabel 5.3.2, more details see requirements.txt.
+- GPU: NVIDIA A100-SXM, 80 GB memory
 
 ## Installation Guide
- - Installation requirement:xx
- - Install time on a "normal" desktop computer takes about 10 minutes.
+ - Install Instructions 
+
+  ```bash
+  # Create conda environment if needed.
+  conda create -n myenv python=3.10.12
+  conda activate myenv
+  # Install packages from requirements.txt
+  pip install -r requirements.txt
+  ```
+ - Install time on a "normal" desktop computer takes about 10~20 minutes.
  - A Docker image enabling direct execution of the code will be made available shortly.
+
 
 ## Demo
 
@@ -54,7 +65,8 @@ Model weights can be downloaded from Google Drive or obtained by contacting the 
   
     1. **Data preprocess**: Similar to pretraining
     2. Load GenBrain's pre-training weight and finetuning.
-   - Reproduction instructions: Follow the default hyper-parameter settings in the source code or according to our paper. 
+
+- **Reproduction instructions:** Follow the default hyper-parameter settings in the source code or according to our paper. 
 
 
 ## Support downstream tasks
