@@ -17,7 +17,7 @@ import os
 import json
 
 from models import DiT_models
-import sys
+import sys,os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from diffusion import create_diffusion
 from model_utils import UKBDataset_modality_translation_DU15_zstat_finetune_uncon,PatchEmbed_1d

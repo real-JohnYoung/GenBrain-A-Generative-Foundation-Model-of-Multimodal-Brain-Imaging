@@ -2,7 +2,8 @@ import torch
 import torch.nn as nn
 torch.backends.cuda.matmul.allow_tf32 = True
 torch.backends.cudnn.allow_tf32 = True
-import sys
+import os
+import sys,os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from diffusion import create_diffusion
 import os

@@ -18,7 +18,7 @@ import json
 from models import DiT_models
 from model_utils import UKBDataset_modality_translation_T1_T2_finetune_uncon,PatchEmbed_1d
 
-import sys
+import sys,os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from diffusion import create_diffusion
 
