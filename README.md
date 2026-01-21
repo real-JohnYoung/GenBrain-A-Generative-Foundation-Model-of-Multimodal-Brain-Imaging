@@ -60,6 +60,7 @@ Model weights can be downloaded from Google Drive or obtained by contacting the 
 
 1. **Image Enhancement**  
    - Denoising and motion correction.
+   - Finetuned GenBrain v1.0 Support T1w and T2-FLAIR modalities. 
 
 2. **Cross-modality Synthesis**  
    It can be used for :
