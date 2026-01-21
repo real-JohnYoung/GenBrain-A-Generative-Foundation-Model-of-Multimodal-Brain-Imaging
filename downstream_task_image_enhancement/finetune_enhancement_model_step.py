@@ -18,6 +18,8 @@ import os
 import json
 
 from models import DiT_models
+import sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from diffusion import create_diffusion
 from model_utils import UKBDataset_enhancement_finetune,PatchEmbed_1d
 

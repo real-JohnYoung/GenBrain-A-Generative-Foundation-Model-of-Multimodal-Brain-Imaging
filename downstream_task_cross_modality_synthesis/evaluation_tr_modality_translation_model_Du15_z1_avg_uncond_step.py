@@ -250,20 +250,20 @@ def save_batch_data(eid_batch,modality_batch, data, save_dir, image_data_info, s
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--model", type=str, choices=list(DiT_models.keys()), default="DiT-UKB-L/256")
-    parser.add_argument("--data_path", type=str) # ukb_multimodal brain imaging
+    parser.add_argument("--data_path", type=str)# ukb_multimodal dataset
     parser.add_argument("--cfg-scale", type=float, default=1.2)
     parser.add_argument("--num-sampling-steps", type=int, default=50)
     parser.add_argument("--seed", type=int, default=0)
     parser.add_argument("--image-size", type=int, default=228453)
-    parser.add_argument("--ckpt", type=str)
+    parser.add_argument("--ckpt", type=str)# ckpt
     parser.add_argument("--ckpt_step", type=int, default=50000)
     parser.add_argument("--save_dir", type=str)
-    parser.add_argument("--data_info", type=str) # data_info.csv
+    parser.add_argument("--data_info", type=str)# data_info.json
     parser.add_argument("--sample_file", type=str)
     parser.add_argument("--batch_size", type=int, default=5, help="Number of samples per batch")
     parser.add_argument("--modality_num", type=int, default=34, help="Number of modalities per sample")
     parser.add_argument("--num-workers", type=int, default=8)
-    parser.add_argument("--average_num", type=int, default=10, help="Average number per sample")
+    parser.add_argument("--average_num", type=int, default=5, help="Average number per sample")
     parser.add_argument("--need_average", type=int, default=1) # need : 0-no, 1-yes
     parser.add_argument("--use_ddim", default=True)
 

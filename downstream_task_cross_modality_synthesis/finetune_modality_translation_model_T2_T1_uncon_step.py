@@ -7,8 +7,6 @@ import torch.distributed as dist
 from torch.nn.parallel import DistributedDataParallel as DDP
 from torch.utils.data import DataLoader
 from torch.utils.data.distributed import DistributedSampler
-from torchvision import transforms
-import numpy as np
 from collections import OrderedDict
 from copy import deepcopy
 from glob import glob
@@ -22,6 +20,10 @@ from models import DiT_models
 from diffusion import create_diffusion
 from model_utils import UKBDataset_modality_translation_T2_T1_finetune_uncon,PatchEmbed_1d
 
+import sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from diffusion import create_diffusion
+from model_utils import UKBDataset_enhancement_finetune,PatchEmbed_1d
 
 #################################################################################
 #                             Training Helper Functions                         #

@@ -7,8 +7,6 @@ import torch.distributed as dist
 from torch.nn.parallel import DistributedDataParallel as DDP
 from torch.utils.data import DataLoader
 from torch.utils.data.distributed import DistributedSampler
-from torchvision import transforms
-import numpy as np
 from collections import OrderedDict
 from copy import deepcopy
 from glob import glob
@@ -19,9 +17,10 @@ import os
 import json
 
 from models import DiT_models, LabelEmbedder
-from diffusion import create_diffusion
 from model_utils import UKBDataset_modality_translation_T1_T2_1mm_finetune_uncon,PatchEmbed_1d
-
+import sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from diffusion import create_diffusion
 
 #################################################################################
 #                             Training Helper Functions                         #
@@ -301,8 +300,8 @@ def main(args):
 if __name__ == "__main__":
     # Default args here will train DiT-XL/2 with the hyperparameters we used in our paper (except training iters).
     parser = argparse.ArgumentParser()
-    parser.add_argument("--data_path", type=str, default="/cpfs01/projects-HDD/cfff-afe2df89e32e_HDD/public/work_files_yc/BrainGen/ukb_modality_translation/dataset_ukb_1mm")
-    parser.add_argument("--data_file", type=str, default="/cpfs01/projects-HDD/cfff-afe2df89e32e_HDD/public/work_files_yc/BrainGen/yc_code/downstream_task_modality_translation/labels/modality_translation_T1_T2_1mm_train_data_1k.csv")
+    parser.add_argument("--data_path", type=str) #dataset_ukb_1mm
+    parser.add_argument("--data_file", type=str) 
     parser.add_argument("--data_info", type=str) # data_info.json
     parser.add_argument("--epochs", type=int, default=400)
     parser.add_argument("--results_dir", type=str)
