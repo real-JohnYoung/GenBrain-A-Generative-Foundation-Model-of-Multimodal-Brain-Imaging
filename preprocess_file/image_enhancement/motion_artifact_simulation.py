@@ -2,7 +2,6 @@ import numpy as np
 import nibabel as nib
 from scipy.ndimage import map_coordinates
 
-
 def generate_random_motion(num_movements, rotation_range=(-30, 30), translation_range=(-5, 5), rotation_lam=15, translation_lam=2 ):
 
     rotations = np.random.poisson(rotation_lam, size=(num_movements, 3)) *  np.random.choice([-1, 1], size=(num_movements, 3))
@@ -145,5 +144,4 @@ def add_motion_artifacts(image, num_movements, rotation_range=(-30, 30), transla
     corrupted_image_abs = np.abs(corrupted_image)
     
     return corrupted_image_abs
-
 

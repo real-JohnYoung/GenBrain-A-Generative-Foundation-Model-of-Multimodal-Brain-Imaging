@@ -1,12 +1,10 @@
 # This file contains modulues used for Dit_1d
 import torch
-import torch.nn as nn
 import os
 import numpy as np
 import pandas as pd
 from torch.utils.data import Dataset
 import torch.nn.functional as F
-
 
 class UKBDataset_enhancement_finetune(Dataset):
     def __init__(self, data_path, cor_data_path, data_file, image_data_info,transform=None):

@@ -246,7 +246,6 @@ def save_batch_data(eid_batch,modality_batch, data, save_dir, image_data_info, s
 
 
 
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--model", type=str, choices=list(DiT_models.keys()), default="DiT-UKB-L/256")

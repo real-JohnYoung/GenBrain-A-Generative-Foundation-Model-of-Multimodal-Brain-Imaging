@@ -13,12 +13,11 @@ import torch
 import torch.nn as nn
 import numpy as np
 import math
-from timm.models.vision_transformer import PatchEmbed, Attention, Mlp
+from timm.models.vision_transformer import Attention, Mlp
 from model_utils import PatchEmbed_1d
 
 def modulate(x, shift, scale):
     return x * (1 + scale.unsqueeze(1)) + shift.unsqueeze(1)
-
 
 #################################################################################
 #               Embedding Layers for Timesteps and Class Labels                 #

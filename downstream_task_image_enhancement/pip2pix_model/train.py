@@ -138,7 +138,6 @@ def main(args):
         print("Training finished.")
     cleanup()
 
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--data_path", type=str, default='/corrupt_more_3d_dataset/clean')

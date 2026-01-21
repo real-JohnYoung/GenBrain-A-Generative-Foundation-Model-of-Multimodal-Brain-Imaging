@@ -14,7 +14,6 @@ import numpy as np
 from torch.utils.data import DataLoader
 from model_utils import PatchEmbed_1d, UKBDataset_modality_translation_DU15_zstat_evaluation_uncon
 
-
 def requires_grad(model, flag=True):
     """
     Set requires_grad flag for all parameters in a model.

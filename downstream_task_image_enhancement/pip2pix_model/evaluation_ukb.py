@@ -16,7 +16,6 @@ mni_96_nonzero = (mni_96!=0)
 
 data_file =pd.read_csv(data_file_path)
 
-
 def load_corrupt_images(cor_data_path,eid_batch,modality_batch,device):
     sub_num = len(eid_batch)
     cor_images = []

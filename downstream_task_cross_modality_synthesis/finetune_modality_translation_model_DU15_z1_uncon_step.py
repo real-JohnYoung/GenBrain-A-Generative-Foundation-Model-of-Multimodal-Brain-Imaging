@@ -294,7 +294,6 @@ def main(args):
     logger.info("Done!")
     cleanup()
 
-
 if __name__ == "__main__":
     # Default args here will train DiT-XL/2 with the hyperparameters we used in our paper (except training iters).
     parser = argparse.ArgumentParser()

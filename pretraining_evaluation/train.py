@@ -1,7 +1,6 @@
 # This source code is modified based on  DiT (Meta). Thanks for its contribution.
 # References:
 # DiT:https://github.com/facebookresearch/DiT
-
 """
 A minimal training script for DiT using PyTorch DDP.
 """

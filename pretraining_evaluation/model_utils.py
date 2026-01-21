@@ -122,4 +122,3 @@ class UKBDataset(Dataset):
                 'age': age,'sex': sex,'mod':modality
                }
         return data 
-

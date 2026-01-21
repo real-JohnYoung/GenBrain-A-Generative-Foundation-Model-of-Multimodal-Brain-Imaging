@@ -9,7 +9,6 @@ from motion_artifact_simulation import add_motion_artifacts
 from noise_simulation import add_gaussian_noise_more, add_rician_noise_more
 
 # create corrupt MRI image 
-
 sub_file_path = '../image_quality_enhancement/image_quality_enhancement_training_data_2000.csv'
 data_root_1 = 'UKB_FILE_for_T1w'        # nii.gz file
 data_root_2 = 'UKB_FILE_for_FLAIR'      # 1d file

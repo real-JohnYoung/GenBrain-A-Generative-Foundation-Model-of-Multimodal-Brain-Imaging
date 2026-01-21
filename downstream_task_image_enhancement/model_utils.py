@@ -7,6 +7,7 @@ import pandas as pd
 from torch.utils.data import Dataset
 import torch.nn.functional as F
 
+
 class PatchEmbed_1d(nn.Module):
     """ 1D Image to Patch Embedding
     """

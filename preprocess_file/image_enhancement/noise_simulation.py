@@ -1,5 +1,7 @@
 import numpy as np
 
+# simulate different noise to unnormalized mri
+
 def add_gaussian_noise(image, noise_level=1):
     sigma_list = [20, 30, 50]
     sigma = sigma_list[noise_level-1]

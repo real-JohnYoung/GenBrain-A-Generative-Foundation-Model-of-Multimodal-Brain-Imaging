@@ -13,7 +13,6 @@ import json
 import numpy as np
 from model_utils import PatchEmbed_1d
 
-
 def requires_grad(model, flag=True):
     """
     Set requires_grad flag for all parameters in a model.

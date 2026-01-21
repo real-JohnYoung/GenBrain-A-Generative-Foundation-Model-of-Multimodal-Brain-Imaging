@@ -4,7 +4,6 @@ import torch.nn as nn
 import functools
 from torch.nn import init
 
-
 class Identity(nn.Module):
     def forward(self, x):
         return x

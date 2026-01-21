@@ -239,7 +239,6 @@ def save_batch_data(eid_batch, data, save_dir, image_data_info, modality_num, sa
             # Provide the array to save
             np.save(os.path.join(addr, f"{modality}_sample_{sample_num}.npy"), x)
 
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--model", type=str, choices=list(DiT_models.keys()), default="DiT-UKB-L/256")
