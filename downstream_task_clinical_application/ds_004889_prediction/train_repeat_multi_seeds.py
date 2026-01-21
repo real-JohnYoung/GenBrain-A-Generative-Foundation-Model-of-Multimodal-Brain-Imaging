@@ -97,7 +97,7 @@ def main(real_train_img_dir, real_train_csv, gen_train_img_dir, gen_train_csv,
 
 if __name__ == '__main__':
     results = []
-    seeds = [41,42 ,43, 44, 45]  # 可以根据需要调整种子数量
+    seeds = [41,42 ,43, 44, 45]  
     lr = 5e-5
 
     for seed in seeds:
