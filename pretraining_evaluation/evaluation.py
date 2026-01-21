@@ -6,13 +6,21 @@ import sys
 import torch
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from diffusion import create_diffusion
-from download import find_model
 import argparse
 import pandas as pd
 from models import DiT_models
 import json
 import numpy as np
 from tqdm import tqdm
+
+
+def find_model(model_name):
+    assert os.path.isfile(model_name), f'Could not find DiT checkpoint at {model_name}'
+    checkpoint = torch.load(model_name, map_location=lambda storage, loc: storage)
+    if "model" in checkpoint:  # supports checkpoints from train.py
+        checkpoint = checkpoint["model"]
+    return checkpoint
+
 
 def main(args):
     # Setup PyTorch:
