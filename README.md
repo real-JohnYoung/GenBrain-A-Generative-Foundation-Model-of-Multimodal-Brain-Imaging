@@ -89,7 +89,9 @@ You can download the pre-trained weight here:  [Google Drive Link](https://drive
 
 ---
 
-## Directory Structure
+## License
+
+This project is licensed under the MIT License.
 
 
 ## Contact
