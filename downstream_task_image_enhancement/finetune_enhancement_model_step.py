@@ -7,7 +7,6 @@ import torch.distributed as dist
 from torch.nn.parallel import DistributedDataParallel as DDP
 from torch.utils.data import DataLoader
 from torch.utils.data.distributed import DistributedSampler
-import numpy as np
 from collections import OrderedDict
 from copy import deepcopy
 from glob import glob

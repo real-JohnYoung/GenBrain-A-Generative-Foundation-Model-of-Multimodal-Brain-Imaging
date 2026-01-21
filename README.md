@@ -39,6 +39,7 @@ Model weights can be downloaded from Google Drive or obtained by contacting me.
 4. **Improving BWAS realiability**  
 5. **Clinical Application**
 6. **Image Super-resolution**  
+   - Finetune GenBrain for image super-resolution task (e.g 2mm T1w -> 1mm T1w, operated in MNI152 standard space).
 
 ## Pretrained Weights
 
