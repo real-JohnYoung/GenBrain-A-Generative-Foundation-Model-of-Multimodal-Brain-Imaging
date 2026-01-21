@@ -115,7 +115,7 @@ Model weights can be downloaded from Google Drive or obtained by contacting the 
 
 ## Pretrained Weights
 
-You can download the pre-trained weight here:  [Google Drive Link](https://drive.google.com/drive/folders/1ajTRlSGIfg9OXQtXX7TfBhVDKaMPrALM?usp=drive_link)
+You can download the pre-trained weight here:  [Google Drive Link](https://drive.google.com/drive/folders/1E9qbUd_KAVqukAzMyydR1YAHadBNfrDX)
 
 
 ## License
