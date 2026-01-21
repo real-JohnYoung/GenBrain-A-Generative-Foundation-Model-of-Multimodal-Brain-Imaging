@@ -28,13 +28,31 @@ Model weights can be downloaded from Google Drive or obtained by contacting the 
    The demo can be run using:
   ```bash
   python run_inference.py
+  ```
 - **Expected output:** An enhanced MRI image.
 
 - **Runtime:** On a standard desktop computer equipped with an NVIDIA GPU with more than 20 GB of memory, inference for a single sample using DDIM (50 steps) takes approximately 10–30 seconds.
 
 
-## Instructions for use
+## Instructions for Use
 
+- **GenBrain Pre-training Instructions:**
+
+  1. **Data Preprocessing:** UKB multimodal brain image dataset are non-linearly registered to the MNI152 2mm standard space. Brain voxels are then extracted from the template and saved as `.npy` files. Note: *(FSL software is recommended for preprocessing)*
+
+  
+  2. **Configure Pre-training Settings and Files:** Prepare model pre-training parameters, data file, and label file (including individual age, sex, and imaging modality). Phenotypic information and imaging modality details can be found in `data_info.json`.
+  
+  3. **Running the Training:** Multi-GPU training requires support for Distributed Data Parallel (Recommend Nvidia A100 GPUs):
+     ```bash
+     torchrun --nnodes=N_Node --nproc_per_node=N_GPU train.py
+     torchrun --nnodes=1 --nproc_per_node=6 train.py          # Our: 1 node with 6 Nvidia A100 GPUs
+     ```
+
+- **GenBrain Finetuning Instructions:**
+    1.Data preprocess
+    2，
+   - Reproduction instructions: Follow the default hyper-parameter settings in the source code or according to our paper. 
 
 
 ## Support downstream tasks
