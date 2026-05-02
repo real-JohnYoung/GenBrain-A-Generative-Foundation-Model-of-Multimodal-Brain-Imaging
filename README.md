@@ -133,11 +133,11 @@ It can be used for:
 - Fine-tune GenBrain on clinical-grade images with disease labels. Synthetic images are added to real images at varying ratios to train the predictive model, improving its diagnostic performance.
 - Specifically, this approach enhances the prediction of acute stroke severity ([ds004889](https://openneuro.org/datasets/ds004889/versions/1.1.2)) and chronic aphasia ([ds004884](https://openneuro.org/datasets/ds004884/versions/1.0.1)).
 - See detailed instructions [README.md](downstream_task_clinical_application/README.md)
-- 
+
 ### 6. Image Super-resolution
 - Fine-tune GenBrain for image super-resolution (e.g. 2 mm T1w → 1 mm T1w, operated in MNI152 standard space).
 - The pipeline first applies nearest-neighbor interpolation to upsample the low-resolution image to the target resolution, followed by GenBrain for super-resolution.
-
+- See detailed instructions [README.md](downstream_task_image_super_resolution/README.md)
 ---
 
 ## Pretrained Weights
