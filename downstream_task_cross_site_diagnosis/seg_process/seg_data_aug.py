@@ -60,6 +60,6 @@ def run_inference(inference_path, id,origin_3d_save_dir, seg_3d_save_dir, seg_cs
 data_df = pd.read_csv(data_file)
 id_list = data_df['ID'].to_list()
 
-for id in tqdm(id_list[1::2]):
+for id in tqdm(id_list):
     save_1d_to_3d(origin_1d_dir, origin_3d_save_dir, id, mask_img)
     run_inference(inference_path, id, origin_3d_save_dir, seg_3d_save_dir, seg_csv_save_dir)

@@ -1,31 +1,35 @@
-# Cross-modality Synthesis
+# Cross-site Diagnosis
 
-Instruction for fine-tuning GenBrain for cross-modality synthesis.
+Instruction for fine-tuning GenBrain for cross-site diagnosis.
 
 ## Data Preparation
 
-Prepare paired data: source modality and target modality images, both stored as 1D arrays using the MNI152 2mm mask (following the GenBrain pretraining preprocessing pipeline).
+Prepare source modality images and corresponding disease labels, stored as 1D arrays using the MNI152 2mm mask (following the GenBrain pretraining preprocessing pipeline).
 
 ## Usage
 
 **Step 1: Prepare your dataset**
 
-Paired source/target modality data in MNI152 2mm standard space (stored as 1D array, N_voxel=228,453).
+Paired source images and disease labels in MNI152 2mm standard space (stored as 1D array, N_voxel=228,453).
 
 **Step 2: Configure and run fine-tuning**
 
-Taking T1 → T2-FLAIR as an example. Edit the settings in `finetune_modality_translation_model_T1_T2_uncon_step.py`, then run:
+Taking Schizophrenia (SCZ) as an example. Edit the settings in `finetune_multisite_scz_T1_one_site_step.py`, then run:
 
 ```bash
-torchrun --nnodes=1 --nproc_per_node=2 finetune_modality_translation_model_T1_T2_uncon_step.py
+torchrun --nnodes=1 --nproc_per_node=1 finetune_multisite_scz_T1_one_site_step.py
 ```
 
-For 1mm resolution synthesis, use `finetune_modality_translation_model_T1_T2_1mm_uncon_step.py` and configure accordingly.
-
-Code for other modality-to-modality translation directions is also provided — adjust the input/target modality settings in the corresponding script.
+Code for other diseases is also provided — adjust the disease label and modality settings in the corresponding script.
 
 **Step 3: Inference**
 
 ```bash
-python evaluation_ft_modality_translation_model_T1_FLAIR_avg_uncond_step_zic.py
+python evaluation_ft_multisite_scz_T1_step_avg.py
 ```
+
+**Step 4: Diagnosis**
+
+Use WMH-SynthSeg to extract regional brain volumetric features from both synthetic and real images. Mix synthetic and real features at varying ratios to train a LightGBM classifier for cross-site diagnosis.
+
+Taking SCZ as an example, the cross-site diagnosis code is provided in [`downstream_task_cross_site_diagnosis/multisite_scz/`](multisite_scz/).
