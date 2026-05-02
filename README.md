@@ -108,6 +108,7 @@ Model weights can be downloaded from [Google Drive](#pretrained-weights) or obta
 ### 1. Image Enhancement
 - Denoising and motion correction.
 - Fine-tuned GenBrain v1.0 supports T1w and T2-FLAIR modalities.
+- See detailed instructions [README.md](downstream_tasks/image_enhancement/README.md)
 
 ### 2. Cross-modality Synthesis
 It can be used for:
