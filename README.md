@@ -108,13 +108,14 @@ Model weights can be downloaded from [Google Drive](#pretrained-weights) or obta
 ### 1. Image Enhancement
 - Denoising and motion correction.
 - Fine-tuned GenBrain v1.0 supports T1w and T2-FLAIR modalities.
-- See detailed instructions [README.md](downstream_tasks/image_enhancement/README.md)
+- See detailed instructions [README.md](downstream_tasks/downstream_task_image_enhancement/README.md)
 
 ### 2. Cross-modality Synthesis
 It can be used for:
 - **Structural Synthesis** (e.g. T1w ↔ FLAIR)
 - **Functional Synthesis:** rs-fMRI FC to task-based fMRI activations (e.g. 15 [seed-based](https://freesurfer.net/fswiki/CorticalParcellation_DU15NET) rs-fMRI FCs → "shapes" task contrast maps in UKB)
 - **Structure-Function Synthesis:** dMRI scalar maps to rs-fMRI FC (e.g. 9 dMRI maps → Language Network FC)
+- See detailed instructions [README.md](downstream_tasks/downstream_task_cross_modality_synthesis/README.md)
 
 ### 3. Cross-site Diagnosis
 - Fine-tune GenBrain on images with disease labels. Synthetic images and real images volumetric measures are extracted by WMH-SynthSeg. These volumetric features serve as quantitative inputs for a machine learning classification model (LightGBM).
