@@ -67,7 +67,7 @@ Model weights can be downloaded from [Google Drive](#pretrained-weights) or obta
 
 ### GenBrain Pretraining
 
-1. **Data Preprocessing:** UKB multimodal brain image datasets are non-linearly registered to the MNI152 2mm standard space (orientation: LAS). Brain voxels are then extracted according to nonzero indices in the template and saved as `.npy` files (stored as 1D array, N_voxel=228,453). *(Note: [FSL software](https://fsl.fmrib.ox.ac.uk/fsl/docs/index.html) is recommended for preprocessing)*
+1. **Data Preprocessing:** UKB multimodal brain image datasets are non-linearly registered to the MNI152 2mm standard space (template provided in  [preprocess_file] folder, orientation: LAS). Brain voxels are then extracted according to nonzero indices in the template and saved as `.npy` files (stored as 1D array, N_voxel=228,453). *(Note: [FSL software](https://fsl.fmrib.ox.ac.uk/fsl/docs/index.html) is recommended for preprocessing)*
 
 2. **Configure Pretraining Settings and Files:** Prepare model pretraining parameters, data file, and label file (including individual age, sex, and imaging modality); files are in the `labels/` directory. Phenotypic information and imaging modality details can be found in `data_info.json`.
 
