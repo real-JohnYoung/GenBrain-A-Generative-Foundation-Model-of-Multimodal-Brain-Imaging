@@ -6,9 +6,7 @@ Instruction for fine-tuning GenBrain for image enhancement (denoising and motion
 
 Prepare paired data: corrupted images and raw images, both stored as 1D arrays using the MNI152 2mm mask (following the GenBrain pretraining preprocessing pipeline).
 
-Preprocessing scripts are provided in [`preprocess_file/image_enhancement/`](preprocess_file/image_enhancement/).
-
-> Corrupted data simulation code will be provided soon.
+Preprocessing scripts (corrupted data simulation code) are provided in [`preprocess_file/image_enhancement/`](preprocess_file/image_enhancement/).
 
 ## Usage
 
