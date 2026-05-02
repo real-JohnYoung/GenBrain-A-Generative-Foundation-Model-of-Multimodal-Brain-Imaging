@@ -17,7 +17,7 @@ The version corresponding to the submitted manuscript is tagged as **v1.0**. Thi
 
 **GenBrain** is a generative foundation model designed for multimodal brain imaging.
 
-GenBrain is pre-trained on large-scale neuroimaging data from the **UK Biobank** and evaluated on **81 heterogeneous datasets**, demonstrating strong generalization across imaging modalities and downstream tasks.
+GenBrain is pre-trained on large-scale neuroimaging data from the **UK Biobank** and evaluated across **81 independent sites**, demonstrating strong generalization across imaging modalities and downstream tasks.
 
 This repository provides the core implementation of GenBrain, along with pretrained models for research and development in neuroimaging and AI-driven brain analysis.
 
